@@ -1,0 +1,16 @@
+server:
+  port: 9401
+spring:
+  application:
+    name: config-client-bus
+  cloud:
+    bus:
+      enabled: true
+      trace:
+        enabled: true
+  rabbitmq:
+    port: 5672
+    username: admin
+    password: admin
+    host: localhost
+    virtual-host: my_vhost

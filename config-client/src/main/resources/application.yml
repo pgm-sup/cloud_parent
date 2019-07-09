@@ -1,0 +1,10 @@
+server:
+  port: 9400
+spring:
+  application:
+    name: config-client
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh

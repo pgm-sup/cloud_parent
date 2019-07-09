@@ -1,0 +1,32 @@
+server:
+  port: 9300
+spring:
+  application:
+    name: config-server-bus
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/pgm-sup/configs # 远程仓库配置地址
+          search-paths: ./
+    bus:
+      enabled: true
+      trace:
+        enabled: true
+  rabbitmq: # rabbitmq配置信息
+    port: 5672
+    username: admin
+    password: admin
+    host: localhost
+    virtual-host: my_vhost
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://admin:123456@localhost:8761/eureka/ # 注册中心地址
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh # 开启自动刷新服务

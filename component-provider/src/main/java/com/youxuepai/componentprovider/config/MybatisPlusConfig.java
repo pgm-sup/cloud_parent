@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * mybatis plus 配置
  *
- * @author jiangyong
+ * @author super
  */
 @Configuration
 @MapperScan("com.youxuepai.componentprovider.mapper")

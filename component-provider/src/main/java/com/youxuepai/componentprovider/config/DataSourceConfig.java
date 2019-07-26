@@ -11,7 +11,7 @@ import javax.sql.DataSource;
 /**
  * 数据源配置，同时加上事务
  *
- * @author jiangyong
+ * @author super
  */
 @Configuration
 @EnableTransactionManagement

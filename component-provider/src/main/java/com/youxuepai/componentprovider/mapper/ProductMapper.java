@@ -2,7 +2,7 @@ package com.youxuepai.componentprovider.mapper;
 
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.youxuepai.componentprovider.entity.Product;
+import com.youxuepai.componentapi.entity.Product;
 
 /**
  * <p>

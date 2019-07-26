@@ -6,7 +6,7 @@
 <!--    <cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>-->
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.youxuepai.componentprovider.entity.Product">
+    <resultMap id="BaseResultMap" type="com.youxuepai.componentapi.entity.Product">
         <id column="id" property="id" />
         <result column="name" property="name" />
         <result column="category" property="category" />

@@ -1,7 +1,7 @@
 package com.youxuepai.componentprovider.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.youxuepai.componentprovider.entity.Product;
+import com.youxuepai.componentapi.entity.Product;
 
 /**
  * <p>

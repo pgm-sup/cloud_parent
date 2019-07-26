@@ -1,7 +1,7 @@
 package com.youxuepai.componentprovider.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.youxuepai.componentprovider.entity.Product;
+import com.youxuepai.componentapi.entity.Product;
 import com.youxuepai.componentprovider.mapper.ProductMapper;
 import com.youxuepai.componentprovider.service.ProductService;
 import org.springframework.stereotype.Service;

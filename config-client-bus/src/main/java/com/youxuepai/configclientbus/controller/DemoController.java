@@ -13,11 +13,11 @@ import reactor.core.publisher.Mono;
 @RefreshScope
 public class DemoController {
 
-    @Value("${application.name}")
-    private String appName;
+    @Value("${spring.datasource.username}")
+    private String dataSourceName;
 
-    @GetMapping("/appName")
+    @GetMapping("/dataSourceName")
     public Mono<String> hello(){
-        return Mono.justOrEmpty(appName);
+        return Mono.justOrEmpty(dataSourceName);
     }
 }

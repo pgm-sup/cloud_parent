@@ -1,0 +1,6 @@
+encrypt:
+  key-store:
+    alias: youxuepaikey
+    password: youxuepai
+    secret: youxuepai
+    location: youxuepai-config-server.jks

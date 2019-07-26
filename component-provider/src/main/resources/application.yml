@@ -1,8 +1,8 @@
 server:
-  port: 9400
+  port: 9401
 spring:
   application:
-    name: config-client-bus
+    name: component-provider
   cloud:
     bus:
       enabled: true

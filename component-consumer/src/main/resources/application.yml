@@ -13,3 +13,6 @@ spring:
     password: admin
     host: localhost
     virtual-host: my_vhost
+feign:
+  hystrix:
+    enabled: true

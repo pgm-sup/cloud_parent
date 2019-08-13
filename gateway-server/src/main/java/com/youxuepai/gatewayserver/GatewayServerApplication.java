@@ -1,20 +1,18 @@
-package com.youxuepai.configserverbus;
+package com.youxuepai.gatewayserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.config.server.EnableConfigServer;
 
 /**
  * @author super
  */
 @SpringBootApplication
-@EnableConfigServer
 @EnableDiscoveryClient
-public class ConfigServerBusApplication {
+public class GatewayServerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ConfigServerBusApplication.class, args);
+        SpringApplication.run(GatewayServerApplication.class, args);
     }
 
 }

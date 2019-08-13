@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: componentconsumer
+          uri: lb://component-comsumer
+          predicates:
+          - Path=/productapi/**
+          filters:
+            - StripPrefix=1

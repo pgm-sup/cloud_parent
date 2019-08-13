@@ -3,11 +3,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.youxuepai</groupId>
-    <artifactId>config-client-bus</artifactId>
+    <artifactId>gateway-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>config-client-bus</name>
-    <description>Demo project for Spring Boot</description>
+    <name>gateway-server</name>
+
 
     <parent>
         <groupId>com.youxuepai</groupId>
@@ -16,6 +15,10 @@
     </parent>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
         <!-- spring-cloud-config -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -26,10 +29,13 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-bus-amqp</artifactId>
         </dependency>
+
+        <!-- gateway 网关 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
         </dependency>
     </dependencies>
+
 
 </project>
